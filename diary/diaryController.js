@@ -1,9 +1,6 @@
 const { v4: uuidv4 } = require('uuid');
-const AWS = require('aws-sdk');
-const path = require('path');
 require("dotenv").config();
 
-const { S3 } = require('@aws-sdk/client-s3');
 const { diaries } = require('../data');
 
 const diaryController = {

@@ -102,7 +102,7 @@ const calendarController = {
                 code: 200,
                 message: '일정이 성공적으로 삭제되었습니다',
             });
-            calendars.splice(index, 1); // 배열에서 해당 일기를 삭제
+            calendars.splice(index, 1); // 배열에서 해당 일정을 삭제
             console.log('일정 삭제 delete API 연결 성공', diaries);
         } else {
             res.status(404).json({ 

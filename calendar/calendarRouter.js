@@ -3,9 +3,7 @@ const express = require('express');
 const calendarRouter = express.Router();
 const calendarController = require('./calendarController'); 
 
-
-
-//캘린더 일정 조회
+// 캘린더 일정 조회
 calendarRouter.get('/:date/:userId', calendarController.getCalendar);
 
 // 캘린더 일정 추가

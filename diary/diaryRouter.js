@@ -12,9 +12,7 @@ const path = require('path');
 const s3 = new S3({
     region: 'ap-northeast-2',
     credentials: {
-        //accessKeyId의 경우는 공개되지 않도록 환경변수로 설정
         accessKeyId: process.env.S3_ACCESS_KEY,
-        //secretAccessKey도 공개되지 않도록 환경변수 설정
         secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
     },
 })
